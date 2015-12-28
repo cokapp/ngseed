@@ -10,8 +10,7 @@
   "dependencies": {
   },
   "scripts": {
-    "install": "npm install",
-    "postinstall": "bower install && gulp build",
+    "install": "bower install && gulp build",
     "start": "gulp serve:dist"
   },
   "devDependencies": {
