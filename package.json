@@ -10,7 +10,9 @@
   "dependencies": {
   },
   "scripts": {
-    "test": "gulp test"
+    "install": "npm install",
+    "postinstall": "bower install && gulp build",
+    "start": "gulp serve:dist"
   },
   "devDependencies": {
     "gulp-cssnano": "^2.0.0",
