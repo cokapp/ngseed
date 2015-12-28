@@ -1,0 +1,55 @@
+@app-header-height: 48px;
+@app-header-button-height: 36px;
+@app-header-padding: (@app-header-height - @app-header-button-height) / 2;
+
+
+.app-header{
+	background: #303039;
+	height: @app-header-height;
+	position: relative;
+	.button{
+		padding: 0;
+		margin: 0;
+		height: @app-header-button-height;
+		line-height: @app-header-button-height;
+	}
+
+	.app-header-middle{
+		width: 200px;
+		text-align: center;
+	    margin: 0 auto;
+	    position: relative;
+	    a{
+	    	display: block;
+	    	height: @app-header-height;
+	    	line-height: @app-header-height;
+	    	font-size: 18px;
+	    	color: #fff;
+	    }
+	}
+	.app-header-left{
+		position: absolute;
+		top: @app-header-padding;
+		left: @app-header-padding;
+		width: 200px;
+		text-align: left;
+
+		.btn-login{
+			width: 44px;
+		}
+	}
+	.app-header-right{
+		position: absolute;
+		top: @app-header-padding;
+		right: @app-header-padding;
+		width: 200px;
+	    text-align: right;
+
+		.btn-edit{
+			width: 44px;
+			i{
+				font-size: 20px;
+			}
+		}
+	}
+}
